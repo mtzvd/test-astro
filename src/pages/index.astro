@@ -1,0 +1,40 @@
+---
+
+// You can import components from any supported Framework here!
+import SvelteCounter from '../components/SvelteCounter.svelte';
+import Login from '../components/Login.svelte';
+import Bind from '../components/Bind.svelte';
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'My Astro Site';
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    
+</head>
+<body>
+    <main class="section">
+        <SvelteCounter client:visible />
+        <div class="block"></div>
+        <Login client:visible />
+        <div class="block"></div>
+        <Bind client:visible />
+    </main>
+</body>
+</html>
