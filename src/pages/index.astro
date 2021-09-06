@@ -4,6 +4,7 @@
 import SvelteCounter from '../components/SvelteCounter.svelte';
 import Login from '../components/Login.svelte';
 import Bind from '../components/Bind.svelte';
+import Move from '../components/Move.svelte';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -35,6 +36,8 @@ let title = 'My Astro Site';
         <Login client:visible />
         <div class="block"></div>
         <Bind client:visible />
+        <div class="block"></div>
+        <Move client:visible />
     </main>
 </body>
 </html>
